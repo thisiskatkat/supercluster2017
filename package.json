@@ -1,0 +1,23 @@
+{
+  "name": "supercluster2017",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/thisiskatkat/supercluster2017/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisiskatkat/supercluster2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisiskatkat/supercluster2017/issues"
+  },
+  "homepage": "https://github.com/thisiskatkat/supercluster2017#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

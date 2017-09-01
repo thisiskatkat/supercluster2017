@@ -1,0 +1,30 @@
+
+* {
+    font-family: "Menlo", monospace;
+    color: #b9babc
+}
+
+body {
+    background-color: #111111;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Menlo", monospace;
+    font-weight: normal;
+    line-height: 1.7;
+}
+a {
+    text-decoration: underline;
+    color: #b9babc;
+    &:hover {
+        color: #32e4dc;
+    }
+}
+
+header {
+    h1 {
+        color: #32e4dc;
+        font-size: 25px;
+    }
+}
