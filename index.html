@@ -4,20 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Supercluster Festival 2017</title>
+
+    <title>Supercluster Festival 2017, Brussels</title>
+    <!--meta name="description" content="">
+    <meta property="og:image" content=""-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="http://supercluster.be">
 </head>
 <body>
-    <div id="superclusterApp">
-        <header>
-            <h1>Supercluster 2017</h1>
-        </header>
-        <p>23 sept, Barlok Brussels - <a href="https://www.facebook.com/events/459547674424362/" target="_blank">Facebook event</a>  </p>
+    <nav class="menu">
+        <ul>
+            <li><a href="#artistList">Artists</a></li>
+            <!--li><a href="#lineup">Line up</a></li-->
+            <li><a href="#workshop">Workshop</a></li>
+            <li><a href="#info">Info</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!--h1>Supercluster Festival 2017</h1-->
+        <p class="date">23 sept 2017</p>
+        <p class="place">Barlok, Brussels</p>
+    </header>
+    <div class="container">
+        <section id="artistList">
+            <h2>Artists</h2>
+            <div class="listing">
+                <article v-for="artist in artists" class="artist">
+                    <div class="artist_card" v-on:click="showArtist">
+                        <div class="artist_thumb" >
+                            <img :src="'img/thumbs/' + artist.img" :alt="artist.name" v-if="artist.img !== '' ">
+                        </div>
+                        <h3>{{ artist.name }}</h3>
+                    </div>
+                    <!-- TODO only load when opened -->
+                    <!--div class="artist_profile">
+                        <span class="close">x</span>
+                        <h4>{{ artist.name }}</h4>
+                        <img :src="'img/' + artist.img" :alt="artist.name">
+                        <div class="artist_genre">{{ artist.genre }}</div>
+                        <p>{{ artist.text }}</p>
+                        <ul class="artist_links"><li v-for="link in artist.link"><a :href="link" target="_blank">{{ link }}</a></li></ul>
+                        <div v-html="artist.embed"></div>
+                    </div-->
 
-        <!--p> {{ text2 }}</p-->
+                    <div class="artist_profile">
+                        <span class="close">x</span>
+                        <h4>Name</h4>
+                        <img :src="'img/' + artist.img" :alt="artist.name">
+                        <div class="artist_genre">genre</div>
+                        <p>Text</p>
+                        <ul class="artist_links"><li ><a href="link" target="_blank">{{ link }}</a></li></ul>
+                        <div>embed</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="workshop">
+            <h2>##Workshop: Jonas Gruska ...</h2>
+            <img src="#" alt="">
+            <p>##Text ...</p>
+        </section>
+        <!--section id="lineup">
+            <h2>Lineup</h2>
+            <ul>
+                <li>17:00 Text</li>
+                <li>18:00 Text</li>
+                <li>19:00 Text</li>
+            </ul>
+        </section-->
+        <section id="info">
+            <h2>Info</h2>
+            <p>Venue: Barlok, 53 bis avenue du Port, 1000 Brussels</p>
+            <p>RSVP: <a href="https://www.facebook.com/events/459547674424362/" target="_blank">Facebook event</a></p>
+        </section>
     </div>
 
-    <!--script src="https://unpkg.com/vue"></script>
-    <script src="src/scripts.js"></script-->
+    <script src="src/vue.js"></script>
+    <script src="src/scripts.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-105789989-1', 'auto');
+        ga('send', 'pageview');
+        
+        </script>
 </body>
 </html>
