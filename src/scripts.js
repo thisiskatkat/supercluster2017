@@ -1,12 +1,3 @@
-var artistInfo = new Vue({
-    el: '.artist',
-    methods: {
-        artistOpen: function(artist){
-                // TODO this  - https://medium.com/@codebyjeff/vue-js-simple-tuts-toggling-b80edddee1ac
-        }
-    }
-})
-
 var artists = new Vue({
     el: '#artistList',
     data: {

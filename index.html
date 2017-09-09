@@ -15,8 +15,8 @@
     <nav class="menu">
         <ul>
             <li><a href="#artistList">Artists</a></li>
-            <!--li><a href="#lineup">Line up</a></li-->
-            <li><a href="#workshop">Workshop</a></li>
+            <!--li><a href="#lineup">Line up</a></li>
+            <li><a href="#workshop">Workshop</a></li-->
             <li><a href="#info">Info</a></li>
         </ul>
     </nav>
@@ -30,7 +30,7 @@
             <h2>Artists</h2>
             <div class="listing">
                 <article v-for="artist in artists" class="artist">
-                    <div class="artist_card" v-on:click="showArtist">
+                    <div class="artist_card">
                         <div class="artist_thumb" >
                             <img :src="'img/thumbs/' + artist.img" :alt="artist.name" v-if="artist.img !== '' ">
                         </div>
@@ -59,12 +59,12 @@
                 </article>
             </div>
         </section>
-        <section id="workshop">
+        <!--section id="workshop">
             <h2>##Workshop: Jonas Gruska ...</h2>
             <img src="#" alt="">
             <p>##Text ...</p>
         </section>
-        <!--section id="lineup">
+        <section id="lineup">
             <h2>Lineup</h2>
             <ul>
                 <li>17:00 Text</li>
