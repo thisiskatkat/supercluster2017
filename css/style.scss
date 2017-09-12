@@ -227,3 +227,8 @@ section {
 #info {
     margin-bottom: 150px; 
 }
+@media(max-width:900px) {
+    #info {
+        padding: 20px;
+    }
+}
