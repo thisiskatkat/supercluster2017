@@ -80,6 +80,12 @@ a {
         padding: 0 20px;
     }
 }
+@media(max-width:700px) {
+    .container {
+        padding: 0;
+    }
+}
+
 header {
     margin-top:  365px;
     text-align: center;
@@ -204,6 +210,10 @@ section {
             }
         }
     }
+}
+.artist_profile_wrap {
+    width: 800px;
+    margin: 0px auto;
 }
 .artist_links {
     list-style-type: none;
