@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Supercluster Festival 2017, Brussels</title>
-    <!--meta name="description" content="">
-    <meta property="og:image" content=""-->
+    <meta name="description" content="Supercluster Festival 2017, Brussels">
+    <meta property="og:image" content="supercluster.be/img/bg.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="canonical" href="http://supercluster.be">
 </head>
@@ -29,41 +29,26 @@
         <section id="artistList">
             <h2>Artists</h2>
             <div class="listing">
-                <article v-for="artist in artists" class="artist">
-                    <div class="artist_card">
+                <article v-for="artist in artists" class="artist" :key="artist.id">
+                    <div class="artist_card"  v-on:click='artist.show = true'>
                         <div class="artist_thumb" >
                             <img :src="'img/thumbs/' + artist.img" :alt="artist.name" v-if="artist.img !== '' ">
                         </div>
                         <h3>{{ artist.name }}</h3>
                     </div>
-                    <!-- TODO only load when opened -->
-                    <!--div class="artist_profile">
-                        <span class="close">x</span>
-                        <h4>{{ artist.name }}</h4>
-                        <img :src="'img/' + artist.img" :alt="artist.name">
-                        <div class="artist_genre">{{ artist.genre }}</div>
-                        <p>{{ artist.text }}</p>
-                        <ul class="artist_links"><li v-for="link in artist.link"><a :href="link" target="_blank">{{ link }}</a></li></ul>
-                        <div v-html="artist.embed"></div>
-                    </div-->
-
-                    <!--div class="artist_profile">
-                        <span class="close">x</span>
-                        <h4>Name</h4>
-                        <img :src="'img/' + artist.img" :alt="artist.name">
-                        <div class="artist_genre">genre</div>
-                        <p>Text</p>
-                        <ul class="artist_links"><li ><a href="#" target="_blank">{{ link }}</a></li></ul>
-                        <div>embed</div>
-                    </div-->
+                    <artist-info :data="artist" v-if="artist.show"></artist-info>
                 </article>
             </div>
+            
         </section>
+        
         <!--section id="workshop">
             <h2>##Workshop: Jonas Gruska ...</h2>
             <img src="#" alt="">
             <p>##Text ...</p>
         </section>
+
+
         <section id="lineup">
             <h2>Lineup</h2>
             <ul>
@@ -72,12 +57,26 @@
                 <li>19:00 Text</li>
             </ul>
         </section-->
+
         <section id="info">
             <h2>Info</h2>
             <p>Venue: Barlok, 53 bis avenue du Port, 1000 Brussels</p>
             <p>RSVP: <a href="https://www.facebook.com/events/459547674424362/" target="_blank">Facebook event</a></p>
         </section>
     </div>
+
+    <script type="text/x-template" id="artistInfo">
+        <div class="artist_profile">
+            <span class="close" v-on:click='data.show = false'>x</span>
+            <figure><img :src="'img/' + data.img" :alt="data.name"></figure>
+            
+            <h3>{{ data.name }}</h3>
+            <div class="artist_genre">{{ data.genre }}</div>
+            <p>{{ data.text }}</p>
+            <ul class="artist_links"><li v-for="link in data.link"><a :href="link" target="_blank">{{ link }}</a></li></ul>
+            <div v-html="data.embed" class="embed"></div>
+        </div>
+    </script>
 
     <script src="src/vue.js"></script>
     <script src="src/scripts.js"></script>
@@ -90,6 +89,6 @@
         ga('create', 'UA-105789989-1', 'auto');
         ga('send', 'pageview');
         
-        </script>
+    </script>
 </body>
 </html>

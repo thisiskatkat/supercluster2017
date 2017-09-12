@@ -129,21 +129,45 @@ section {
   opacity: .5; }
 
 .artist_profile {
-  display: none;
   position: absolute;
-  top: 55px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   background-color: black;
   height: 100%;
   bottom: 0;
-  padding: 5em; }
+  padding: 5em;
+  padding-bottom: 600px; }
+  .artist_profile h3 {
+    font-weight: normal;
+    color: white; }
+  .artist_profile figure {
+    float: left;
+    margin: 0 30px 30px 0; }
+    .artist_profile figure img {
+      max-width: 500px;
+      max-height: 500px; }
   .artist_profile .close {
     float: right;
-    font-size: 50px; }
+    font-size: 50px;
+    color: white; }
     .artist_profile .close:hover {
-      color: white; }
+      color: #32e4dc; }
+  .artist_profile .embed {
+    clear: both;
+    margin-top: 50px;
+    text-align: center; }
+
+@media (max-width: 700px) {
+  .artist_profile {
+    padding: 3em; }
+    .artist_profile figure img {
+      max-width: initial;
+      width: 100%; } }
+
+.artist_links {
+  list-style-type: none; }
 
 #info {
   margin-bottom: 150px; }
