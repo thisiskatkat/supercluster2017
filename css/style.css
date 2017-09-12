@@ -165,7 +165,7 @@ section {
 
 @media (max-width: 700px) {
   .artist_profile {
-    padding: 3em; }
+    padding: 3em 3em 1000px 3em; }
     .artist_profile figure img {
       max-width: initial;
       width: 100%; } }
@@ -179,7 +179,12 @@ section {
     width: 100%; } }
 
 .artist_links {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
 
 #info {
   margin-bottom: 150px; }
+
+@media (max-width: 900px) {
+  #info {
+    padding: 20px; } }
