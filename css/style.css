@@ -197,3 +197,21 @@ section {
 @media (max-width: 900px) {
   #info {
     padding: 20px; } }
+
+#workshop figure {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0; }
+  #workshop figure img {
+    width: 100%; }
+
+@media (max-width: 500px) {
+  #workshop figure {
+    width: 100%; } }
+
+.workshop_description {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 30px; }
