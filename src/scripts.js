@@ -49,7 +49,6 @@ var artists = new Vue({
                     "https://soundcloud.com/exoterrism",
                     "https://soundcloud.com/exo-terrism",
                     "https://www.youtube.com/watch?v=UGW-e4pLbE0",
-                    "https://www.youtube.com/watch?v=UGW-e4pLbE0",
                     "https://www.youtube.com/watch?v=MaCbfSXX6rk",
                     "https://www.youtube.com/watch?v=UJMLcrkuCsY",
                     "https://www.youtube.com/watch?v=XDMKiPqaNns",
