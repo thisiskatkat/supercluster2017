@@ -44,12 +44,11 @@ var artists = new Vue({
                 "genre":"",
                 "text": "In his work, Exoterrism (Fan Yau born in Hong Kong 1987), seeks to overcome the separation between geometrical consciousness and the coming four dimensional perception. Influenced by esoteric systems, Yau often engages computer processed algorithms,functions. Constantly seeking for new sounds and synthesizing techniques, he researches the links and differences in human rational, scientific thinking and our existence as a spiritual being in the universe. Through experimentations of sound and its reaction on the human body, Exoterrism aims at creating short term hallucinations or extra-terrestrial experiences. Once technology has surpassed the current notion of space and time, patterns repeating through a multidimensional expanding dynamic system are feed-backing through the present moment. When human soul is interpreted as binary decisions and the mind becomes only a consequence of a loop from where you are conditioned. Segmenting to different strata's between the moment you think and the moment you execute.",
                 "img": "exoterrism.jpg",
-                "embed": "",
+                "embed": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/MaCbfSXX6rk\" frameborder=\"0\" allowfullscreen><\/iframe>",
                 "link": [ 
                     "https://soundcloud.com/exoterrism",
                     "https://soundcloud.com/exo-terrism",
                     "https://www.youtube.com/watch?v=UGW-e4pLbE0",
-                    "https://www.youtube.com/watch?v=MaCbfSXX6rk",
                     "https://www.youtube.com/watch?v=UJMLcrkuCsY",
                     "https://www.youtube.com/watch?v=XDMKiPqaNns",
                     "https://www.facebook.com/exoterrism/"
@@ -61,8 +60,8 @@ var artists = new Vue({
                 "genre": "",
                 "text": "Jacques Kustod is producer currently based in Bratislava. His music is combination of dub psychedelia, cosmic vastness of krautrock and rhyhtm force influenced by techno and electro. Result is implosion of the overall outcome.",
                 "img": "jacqueskustod.jpg",
-                "embed": "",
-                "link": ["https://jacqueskustod.bandcamp.com/"],
+                "embed": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" src=\"https:\/\/w.soundcloud.com\/player\/?url=https%3A\/\/api.soundcloud.com\/tracks\/320327551&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true\"><\/iframe>",
+                "link": ["https://jacqueskustod.bandcamp.com/","https://soundcloud.com/jacques-kustod"],
                 "show": false
             },
             {
@@ -110,8 +109,8 @@ var artists = new Vue({
                 "genre": "drone/ambient",
                 "text": "The Blackwood Incident is an audiovisual project led by Dominik Novak / .soundscapes, triple sun, Oskar /, surfing the mutable boundaries of psychedelic ambient and cinematic drone. Using analog/modular synths as a means to express himself, the project creates safe haven to deal with questions of one's place in society, doubt and emotional struggles are converted into sound. as a live entity, Blackwood is accompanied by analog visuals of Jozef Cabo, which uses CRT Televisions or LCD monitors to enrich the psychedelic overtone of the experience. The sound pallete is also augmented by a variable line up of performers, most notably Michal Hroz�n / oskar /, with 	his ritual acoustic instruments and the rich library of microscopic sounds provided by Amalia R. Filip / Chaosdroid, melting /. Due to the nature of the used instruments and the souls playing them, each live set is a uniquesound exploration of the psyche, just as fleeting and transient as the CRT waves flashing and pulsing among players. Except numerous live performances, The Blackwood Incident also released its debut album 'Curse of the Tribe' on Bratislava's new cassette label Evocative Objects (March 2017) - an album that takes the listener on a journey through soundscapes of lava-black melodies and iridescent sonic sparks of hope. A Journey never ending.",
                 "img": "theblackwoodincident.jpg",
-                "embed": "",
-                "link": [],
+                "embed": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/hzPsgbQbn8g\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "link": ["https://soundcloud.com/theblackwoodincident", "https://evocativeobjects.bandcamp.com/album/curse-of-the-tribe"],
                 "show": false
             },
             {
@@ -133,7 +132,7 @@ var artists = new Vue({
                 "text": "Where Arminius has stopped the Roman conquest of territories east of the Rhein Unprofessional has succeeded. With lutes and lyres she brings the long absent Picenian melodies to the city of Berolinum to challenge its masters percussionists.",
                 "img": "unprofessional.jpg",
                 "embed": "<iframe width=\"100%\" height=\"400\" src=\"https:\/\/www.mixcloud.com\/widget\/iframe\/?feed=%2Fgi-giuglia-vu%2Flive-unprofessional-ms-stubniz-hamburgde-21112015%2F\" frameborder=\"0\" ><\/iframe>",
-                "link": ["https://www.mixcloud.com/gi-giuglia-vu"],
+                "link": ["https://www.mixcloud.com/gi-giuglia-vu","https://soundcloud.com/unprofessional"],
                 "show": false
             },
             {
